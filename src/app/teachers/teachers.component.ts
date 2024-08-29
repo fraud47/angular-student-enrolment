@@ -18,12 +18,12 @@ export class TeachersComponent {
 createTeacher(): void {
     this.ref = this.dialogService.open(CreateTeacherComponent,
       {
-        width: "60%",
+        width: "35%",
        
         closable: true,
         focusOnShow: true,
         modal: true,
-        showHeader: true
+       
       })
   }
 }

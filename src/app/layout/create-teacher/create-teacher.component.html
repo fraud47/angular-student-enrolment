@@ -1,1 +1,10 @@
-<p>create-teacher works!</p>
+<div class="w-full h-full p-5 mx-auto ">
+    <form class="gap-2 flex flex-col" [formGroup]="teacherform" (ngSubmit)="submit() ">
+        <input type="text" class="ring-[1.5px] ring-gray-300 p-2 rounded-md text-sm w-full" pInputText id="name" formControlName="name"/>
+        <input class="ring-[1.5px] ring-gray-300 p-2 rounded-md text-sm w-full" type="text" pInputText id="surname" formControlName="surname"/>
+        <input class="ring-[1.5px] ring-gray-300 p-2 rounded-md text-sm w-full"
+        type="text" pInputText id="address" formControlName="address"/>
+    </form>
+
+
+</div>
