@@ -1,0 +1,22 @@
+
+
+
+
+<section class="w-full flex items-center justify-center h-screen">
+
+
+   <div>
+
+       <h1 class="text-2xl font-bold tracking-tighter">Sign In</h1>
+       <form [formGroup]="loginForm" (ngSubmit)="submit()">
+           <input type="email" id="username" formControlName="username" autocomplete="off" />
+           <label className="text-xs text-gray-500">password</label>
+
+           <input type="password" id="password" formControlName="password" autocomplete="off" />
+           <br>
+           <button>Sign In</button>
+           <br>
+       </form>
+   </div>
+ 
+</section>

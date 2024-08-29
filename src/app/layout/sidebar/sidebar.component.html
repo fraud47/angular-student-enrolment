@@ -1,0 +1,17 @@
+<div class="mt-4 text-sm">
+  <div *ngFor="let category of menuItems" class="flex flex-col gap-2">
+    <span class="hidden lg:block text-gray-400 font-light my-4">
+      {{ category.title }}
+    </span>
+    <div *ngFor="let item of category.items">
+      <a
+        
+        [routerLink]="item.href"
+        class="flex items-center justify-center lg:justify-start gap-4 text-gray-500 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight"
+      >
+
+        <span class="hidden lg:block">{{ item.label }}</span>
+      </a>
+    </div>
+  </div>
+</div>
